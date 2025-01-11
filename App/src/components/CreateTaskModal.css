@@ -1,0 +1,140 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+  }
+  
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 90%;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-out; 
+  }
+  
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: #f44336;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-actions button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 48%;
+  }
+  
+  
+  .form-actions .save-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .form-actions .save-btn:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .form-actions .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .form-actions .cancel-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

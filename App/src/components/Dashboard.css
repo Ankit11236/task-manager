@@ -1,0 +1,185 @@
+.admin-dashboard {
+  padding: 30px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-section select,
+.filter-section input[type="date"],
+.filter-section button {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.filter-section select:focus,
+.filter-section input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.filter-section .clear-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.filter-section .clear-btn:hover {
+  background-color: #5a6268;
+}
+
+.task-list {
+  overflow-x: auto;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.task-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #555;
+}
+
+.task-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.task-table td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.task-table td a:hover {
+  text-decoration: underline;
+}
+
+.task-table td select,
+.task-table td input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.task-table td button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-table td button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.task-table td button.edit {
+  background-color: #28a745;
+  color: white;
+}
+
+.task-table td button.edit:hover {
+  background-color: #218838;
+}
+
+.task-table td button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-table td button.delete:hover {
+  background-color: #c82333;
+}
+
+.task-table td button.assign {
+  background-color: #ffc107;
+  color: black;
+}
+
+.task-table td button.assign:hover {
+  background-color: #e0a800;
+}
+
+.task-table td button.upload {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-table td button.upload:hover {
+  background-color: #0056b3;
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.task-table th {
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  background-color: #f8f9fa;
+}
+
+.task-table td {
+  text-align: center;
+  font-size: 14px;
+  padding: 14px;
+}

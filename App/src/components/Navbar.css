@@ -1,0 +1,91 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+  }
+  
+  .navbar-brand a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .logout-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+  
+ 
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #4a90e2;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-menu li {
+    list-style: none;
+    padding: 10px 15px;
+  }
+  
+  .mobile-menu li a,
+  .mobile-menu li button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
